@@ -19,7 +19,7 @@ export default function KodoDashboard() {
     ]);
 
     try {
-      const res = await fetch("/api/status");
+      const res = await fetch("https://kodo-back.vercel.app/api/status");
       const json = await res.json();
       const data = json.data;
 

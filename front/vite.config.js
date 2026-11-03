@@ -5,5 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  server: { proxy: "https://kodo-back.vercel.app" },
+  // server: { proxy: "https://kodo-back.vercel.app/api/status" },
 });
