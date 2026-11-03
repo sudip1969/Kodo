@@ -2,21 +2,6 @@ import { useState } from "react";
 import { Terminal, Server } from "lucide-react";
 import Banner from "../components/Banner";
 
-const activeModels = [
-  { role: "Router Agent", product: "Kai / Kanjo", model: "openai/gpt-4o" },
-  {
-    role: "Code Gen",
-    product: "Takumi IDE",
-    model: "anthropic/claude-3-5-sonnet",
-  },
-  { role: "Vision / Eval", product: "eParakh", model: "google/gemini-1.5-pro" },
-  {
-    role: "Research / Fallback",
-    product: "Saku CLI",
-    model: "meta-llama/llama-3-70b",
-  },
-];
-
 function Response({ isRunning, terminalOutput, results }) {
 
   return (

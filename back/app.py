@@ -1,9 +1,12 @@
 from flask import Flask, jsonify, render_template
+from flask_cors import CORS
 from asgiref.sync import async_to_sync
 from kodo import run_all_checks
 import os
 
 app = Flask(__name__)
+
+CORS(app, resources={r"/api/*": {"origins": "https://kodo-eight-tan.vercel.app"}})
 
 @app.route("/")
 def index():
